@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+
+  <title>Drakborgen</title>
+  
+  <link rel="stylesheet" href="css/board.css">
+  <script src="js/site.js" async></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="boardgame" class="innerframe"></div>
+        <div id="gameboard" class="gameframe">
+            <img class="imagesize topleft" src="img/corner.png">
+            <img class="imagesize topright" src="img/corner.png">
+            <img class="imagesize bottomleft" src="img/corner.png">
+            <img class="imagesize bottomright" src="img/corner.png">
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            drawBoard('boardgame');
+            drawBoard('gameboard');
+        }
+    </script>
+</body>
+</html>

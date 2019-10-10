@@ -1,0 +1,64 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+#mainboard {
+    height: 100vh;
+    width: 100vw;    
+    background-color: lightgrey;
+    border: 1pt solid black;
+     
+}
+
+#innerframe {
+    display: grid;
+    grid-template-columns: repeat(15, auto);
+    grid-template-rows: repeat(12,auto);
+    grid-template-areas: 
+    "toplf toplf toplf frame frame frame frame frame frame frame frame frame toprh toprh toprh"
+    "toplf toplf toplf floor floor floor floor floor floor floor floor floor toprh toprh toprh"
+    "toplf toplf toplf floor floor floor floor floor floor floor floor floor toprh toprh toprh"
+    "frame floor floor floor floor floor floor floor floor floor floor floor floor floor frame"
+    "frame floor floor floor floor floor floor floor floor floor floor floor floor floor frame"
+    "frame floor floor floor floor floor floor floor floor floor floor floor floor floor frame"
+    "frame floor floor floor floor floor floor floor floor floor floor floor floor floor frame"
+    "frame floor floor floor floor floor floor floor floor floor floor floor floor floor frame"
+    "frame floor floor floor floor floor floor floor floor floor floor floor floor floor frame"
+    "btmlf btmlf btmlf floor floor floor floor floor floor floor floor floor btmrh btmrh btmrh"
+    "btmlf btmlf btmlf floor floor floor floor floor floor floor floor floor btmrh btmrh btmrh"
+    "btmlf btmlf btmlf frame frame frame frame frame frame frame frame frame btmrh btmrh btmrh";
+    height: 100vh;
+    width: 100vw;
+}
+
+#topleft {
+    grid-area: toplf;
+}
+
+#topright {
+    grid-area: toprh;
+}
+
+#bottomleft {
+    grid-area: btmlf;
+}
+
+#btmrh {
+    grid-area: btmrh;
+}
+
+#floor {
+    grid-area: floor;
+    background-color: #444444;
+}
+
+floor:nth-child(odd) floor:nth-child(even), floor:nth-child(even) floor::nth-child(odd) {
+	background: #666666;
+}
+
+
+#frame {
+    grid-area: frame;
+    background-color: #222222;
+}

@@ -1,0 +1,65 @@
+
+
+.gameframe {
+    position: absolute;
+    display: grid;
+    height: 720px;
+    width: 900px;
+    z-index: 10;
+    grid-template-columns: repeat(15, auto);
+    grid-template-rows: repeat(12,auto);
+    grid-template-areas:
+    "letocr letocr .  . . . . . . . . . . ritocr ritocr"
+    "letocr letocr .  . . . . . . . . . . ritocr ritocr"
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . ."
+    "lebtcr lebtcr .  . . . . . . . . . . ribtcr ribtcr"
+    "lebtcr lebtcr .  . . . . . . . . . . ribtcr ribtcr";
+}
+
+.imagesize {
+    height: 120px;
+    width: 120px;
+}
+
+.letocr {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);    
+}
+
+.ritocr {
+}
+
+.lebtcr {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ribtcr {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+
+
+ <div id="startcorner1" class="letocr"><img class="imagesize" src="img/corner.png"></div>
+            <div id="startcorner2" class="ritocr"><img class="imagesize" src="img/corner.png"></div>
+            <div id="startcorner3" class="lebtcr"><img class="imagesize" src="img/corner.png"></div>
+            <div id="startcorner4" class="ribtcr"><img class="imagesize" src="img/corner.png"></div>

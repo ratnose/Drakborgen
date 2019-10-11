@@ -1,7 +1,7 @@
 function drawBoard(gridID) {
     for (gridrow=0; gridrow<12; gridrow++) {
         for (gridcolumn=0; gridcolumn<15; gridcolumn++) {   
-            var customClass=(gridcolumn+'-'+gridrow);
+            var customClass=('t'+gridcolumn+'-'+gridrow);
             var parent = document.getElementById(gridID);
             var divnode = document.createElement('div');
             var attribute = document.createAttribute('class');
